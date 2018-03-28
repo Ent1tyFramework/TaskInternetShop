@@ -39,14 +39,8 @@ namespace InternetShop.Controllers
 
                 if (identityResult.Succeeded)
                 {
-                    //var provider = new DpapiDataProtectionProvider("InternetShop");
-                    //UserManager.UserTokenProvider = new DataProtectorTokenProvider<ApplicationUser>(provider.Create("EmailConfirmation"));
-
                     string token = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-
-                    string callBack = /*Url.RouteUrl("ConfirmEmail", new { userId = user.Id, token },
-                        protocol: Request.Url.Scheme);*/
-                        Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Url.Scheme);
+                    string callBack = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Url.Scheme);
 
                     await UserManager.SendEmailAsync(user.Id, "Confirm email", $"<p>For a registration competion " +
                          $"please</p> <a href=\"{callBack}\">click on me</a> ");
@@ -61,20 +55,14 @@ namespace InternetShop.Controllers
             return View("Register");
         }
 
-        //[Route("confirm/{userId}/{token}", Name = "ConfirmEmail")]
-        public async Task<object> ConfirmEmail(string userId, string token)
+        //GET: /Account/ConfirmEmail/
+        public async Task<ActionResult> ConfirmEmail(string userId, string token)
         {
             if (userId != null && token != null)
             {
                 var identityResult = await UserManager.ConfirmEmailAsync(userId, token);
 
-                string errors = null;
-                if (identityResult.Succeeded == true) return View("EmailConfirmationSuccess");
-                else
-                {
-                    identityResult.Errors.ToList().ForEach(error => errors += error + "\n");
-                    return errors;
-                }
+                return View(identityResult.Succeeded == true ? "EmailConfirmationSuccess" : "Error");
             }
             else return View("Error");
         }
