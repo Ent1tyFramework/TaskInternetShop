@@ -21,6 +21,7 @@ namespace InternetShop.Controllers
         public ApplicationRoleManager RoleManager => HttpContext.GetOwinContext().GetUserManager<ApplicationRoleManager>();
         public IAuthenticationManager AuthManager => HttpContext.GetOwinContext().Authentication;
 
+        //Регистрация
         [Route("register")]
         public ActionResult Register()
         {
@@ -42,11 +43,10 @@ namespace InternetShop.Controllers
                     string token = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     string callBack = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Url.Scheme);
 
-                    await UserManager.SendEmailAsync(user.Id, "Confirm email", $"<p>For a registration competion " +
+                    await UserManager.SendEmailAsync(user.Id, "Confirm email", $"<p>To complete registration, " +
                          $"please</p> <a href=\"{callBack}\">click on me</a> ");
 
-                    ViewBag.email = user.Email;
-
+                    ViewBag.title = $"На электронный адрес {user.Email} отправлены дальнейшие инструкции по завершению регистрации.";
                     return View("SendConfirmationCode");
 
                 }
@@ -55,6 +55,11 @@ namespace InternetShop.Controllers
             return View("Register");
         }
 
+
+        /*Проверка кода подтверждения, отправленного на email.
+          Также устанавливает значение True в строке EmailConfirm в базе данных для этого пользователя,
+          если метод выполнится корректно.*/
+
         //GET: /Account/ConfirmEmail/
         public async Task<ActionResult> ConfirmEmail(string userId, string token)
         {
@@ -62,11 +67,13 @@ namespace InternetShop.Controllers
             {
                 var identityResult = await UserManager.ConfirmEmailAsync(userId, token);
 
-                return View(identityResult.Succeeded == true ? "EmailConfirmationSuccess" : "Error");
+                ViewBag.title = "Благодарим за подтверждение электронной почты.";
+                return View(identityResult.Succeeded ? "ConfirmationSuccess" : "Error");
             }
             else return View("Error");
         }
 
+        /*Вход в аккаунт*/
         [Route("login")]
         public ActionResult Login(string returnUrl)
         {
@@ -100,12 +107,80 @@ namespace InternetShop.Controllers
             return View("Login");
         }
 
+        /*Выход из аккаунта*/
         [Route("signout")]
         public ActionResult SignOut()
         {
             AuthManager.SignOut();
 
             return Redirect("/Home/Index");
+        }
+
+        /// <summary>
+        /// Восстановление пароля
+        /// </summary>
+
+        /*Запрашивает email пользователя для отправки кода подтверждения*/
+        [Route("forgot-password")]
+        public ActionResult ForgotPassword()
+        {
+            return View("ForgotPassword");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("forgot-password")]
+        public async Task<ActionResult> ForgotPassword(ForgotPasswordModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await UserManager.FindByEmailAsync(model.Email);
+
+                if (user != null && (await UserManager.IsEmailConfirmedAsync(user.Id)))
+                {
+                    string token = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
+                    string callBack = Url.Action("ResetPassword", "Account", new { userId = user.Id, token }, Request.Url.Scheme);
+
+                    await UserManager.SendEmailAsync(user.Id, "Confirm email", $"<p>To reset your password, " +
+                         $"please</p> <a href=\"{callBack}\">click on me</a> ");
+
+                    ViewBag.title = $"На электронный адрес {user.Email} отправлены дальнейшие инструкции для создания нового пароля.";
+                    return View("SendConfirmationCode");
+                }
+            }
+            ModelState.AddModelError("", "Email can't be found");
+            return View("ForgotPassword",model);
+        }
+
+        /*Запрашивает новый пароль у пользователя*/
+        //GET: /Account/ResetPassword
+        public ActionResult ResetPassword(string userId, string token)
+        {
+            if (userId != null && token != null)
+            {
+                ViewBag.userId = userId;
+                ViewBag.token = token;
+                return View("ResetPassword");
+            }
+            else return View("Error");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> ResetPassword(ResetPasswordModel model)
+        {
+            if (model.UserId != null && model.Token != null)
+            {
+                if (ModelState.IsValid)
+                {
+                    var identityResult = await UserManager.ResetPasswordAsync(model.UserId, model.Token, model.Password);
+
+                    ViewBag.title = "Ваш пароль изменен.";
+                    return View(identityResult.Succeeded ? "ConfirmationSuccess" : "Error");
+                }
+                else return View("ResetPassword");
+            }
+            else return View("Error");
         }
     }
 }

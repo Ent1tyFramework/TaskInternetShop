@@ -82,3 +82,9 @@ C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identit
 C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csproj.CopyComplete
 C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.dll
 C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.pdb
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.Helpers.resources.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.Mvc.resources.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.Razor.resources.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.WebPages.resources.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.WebPages.Razor.resources.dll

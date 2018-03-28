@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title – приложение ASP.NET</title>
@@ -19,7 +19,7 @@
                 </button>
                 @Html.ActionLink("Internet Shop", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" style="display:block;">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Товары", "Index", "Products")</li>
                     <li>@Html.ActionLink("Корзина", "Index", "Baskets")</li>
