@@ -1,0 +1,84 @@
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\InternetShop.Identity.dll.config
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\InternetShop.Identity.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\InternetShop.Identity.pdb
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Owin.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Helpers.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Mvc.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Razor.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Helpers.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Mvc.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Razor.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csproj.CopyComplete
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.dll
+C:\Users\admin\Desktop\v1\TaskInternetShop-master — копия\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.pdb
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\InternetShop.Identity.dll.config
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\InternetShop.Identity.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\InternetShop.Identity.pdb
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Owin.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Helpers.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Mvc.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Razor.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Helpers.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Mvc.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.Razor.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csproj.CopyComplete
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.pdb
