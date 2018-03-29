@@ -95,18 +95,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\OnlyLettersAttribute.cs" />
     <Compile Include="Attributes\UserNameAttribute.cs" />
     <Compile Include="Contexts\ApplicationDbContext.cs" />
     <Compile Include="Managers\ApplicationRoleManager.cs" />
     <Compile Include="Managers\ApplicationUserManager.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Migrations\201803281121076_InitialCreate.cs" />
+    <Compile Include="Migrations\201803281121076_InitialCreate.Designer.cs">
+      <DependentUpon>201803281121076_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803291754350_AppUser1.1.cs" />
+    <Compile Include="Migrations\201803291754350_AppUser1.1.Designer.cs">
+      <DependentUpon>201803291754350_AppUser1.1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803281121076_InitialCreate.resx">
+      <DependentUpon>201803281121076_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803291754350_AppUser1.1.resx">
+      <DependentUpon>201803291754350_AppUser1.1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -88,3 +88,6 @@ C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identit
 C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.WebPages.resources.dll
 C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\bin\Debug\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.Migrations.InitialCreate.resources
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\TaskInternetShop-master\InternetShop\InternetShop.Identity\obj\Debug\InternetShop.Identity.Migrations.AppUser11.resources

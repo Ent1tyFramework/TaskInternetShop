@@ -12,6 +12,7 @@ using InternetShop.Identity.Entities;
 using System.Security.Claims;
 using InternetShop.Models.IdentityModels;
 using Microsoft.Owin.Security.DataProtection;
+using System.Threading;
 
 namespace InternetShop.Controllers
 {
@@ -35,24 +36,54 @@ namespace InternetShop.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser() { Email = model.Email, UserName = model.Login };
+                var user = new ApplicationUser()
+                {
+                    Email = model.Email,
+                    UserName = model.Login,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName
+                };
                 var identityResult = await UserManager.CreateAsync(user, model.Password);
 
                 if (identityResult.Succeeded)
-                {
-                    string token = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    string callBack = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token }, Request.Url.Scheme);
-
-                    await UserManager.SendEmailAsync(user.Id, "Confirm email", $"<p>To complete registration, " +
-                         $"please</p> <a href=\"{callBack}\">click on me</a> ");
-
-                    ViewBag.title = $"На электронный адрес {user.Email} отправлены дальнейшие инструкции по завершению регистрации.";
-                    return View("SendConfirmationCode");
-
-                }
+                    return RedirectToAction("SendEmailConfirmationLink", new { userId = user.Id });
                 else identityResult.Errors.ToList().ForEach(error => ModelState.AddModelError("", error));
             }
             return View("Register");
+        }
+
+        public async Task<ActionResult> SendEmailConfirmationLink(string userId)
+        {
+            var user = await UserManager.FindByIdAsync(userId);
+            if (user != null && !(await UserManager.IsEmailConfirmedAsync(userId)))
+            {
+                string token = await UserManager.GenerateEmailConfirmationTokenAsync(userId);
+                string callBack = Url.Action("ConfirmEmail", "Account", new { userId, token }, Request.Url.Scheme);
+
+                await UserManager.SendEmailAsync(userId, "Confirm email", $"<p>To complete registration, " +
+                     $"please</p> <a href=\"{callBack}\">click on me</a> ");
+
+                ViewBag.title = $"На электронный адрес {user.Email} отправлены дальнейшие инструкции по завершению регистрации.";
+                return View("SendConfirmationCode");
+            }
+            else return View("Error");
+        }
+
+        public async Task<ActionResult> SendEmailPasswordResetLink(string userId)
+        {
+            var user = await UserManager.FindByIdAsync(userId);
+            if (user != null && await UserManager.IsEmailConfirmedAsync(userId))
+            {
+                string token = await UserManager.GeneratePasswordResetTokenAsync(userId);
+                string callBack = Url.Action("ResetPassword", "Account", new { userId, token }, Request.Url.Scheme);
+
+                await UserManager.SendEmailAsync(userId, "Confirm email", $"<p>To reset your password, " +
+                     $"please</p> <a href=\"{callBack}\">click on me</a> ");
+
+                ViewBag.title = $"На электронный адрес {user.Email} отправлены дальнейшие инструкции для создания нового пароля.";
+                return View("SendConfirmationCode");
+            }
+            else return View("Error");
         }
 
 
@@ -137,19 +168,10 @@ namespace InternetShop.Controllers
                 var user = await UserManager.FindByEmailAsync(model.Email);
 
                 if (user != null && (await UserManager.IsEmailConfirmedAsync(user.Id)))
-                {
-                    string token = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
-                    string callBack = Url.Action("ResetPassword", "Account", new { userId = user.Id, token }, Request.Url.Scheme);
-
-                    await UserManager.SendEmailAsync(user.Id, "Confirm email", $"<p>To reset your password, " +
-                         $"please</p> <a href=\"{callBack}\">click on me</a> ");
-
-                    ViewBag.title = $"На электронный адрес {user.Email} отправлены дальнейшие инструкции для создания нового пароля.";
-                    return View("SendConfirmationCode");
-                }
+                    return RedirectToAction("SendEmailPasswordResetLink", new { userId = user.Id });
             }
             ModelState.AddModelError("", "Email can't be found");
-            return View("ForgotPassword",model);
+            return View("ForgotPassword", model);
         }
 
         /*Запрашивает новый пароль у пользователя*/
@@ -182,5 +204,6 @@ namespace InternetShop.Controllers
             }
             else return View("Error");
         }
+
     }
 }
