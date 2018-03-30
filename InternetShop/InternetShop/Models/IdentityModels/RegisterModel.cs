@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using InternetShop.Identity.Attributes;
+using InternetShop.Common.Attributes;
 
 namespace InternetShop.Models.IdentityModels
 {

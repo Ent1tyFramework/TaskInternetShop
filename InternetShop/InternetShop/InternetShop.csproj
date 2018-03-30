@@ -222,7 +222,9 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -282,6 +284,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\InternetShop.Common\InternetShop.Common.csproj">
+      <Project>{33dc1207-7fca-463e-83b2-08bb04ad11d9}</Project>
+      <Name>InternetShop.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\InternetShop.Contracts\InternetShop.Contracts.csproj">
       <Project>{CA283C96-4F55-4AA7-B648-60DA73D722D0}</Project>
       <Name>InternetShop.Contracts</Name>

@@ -95,8 +95,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\OnlyLettersAttribute.cs" />
-    <Compile Include="Attributes\UserNameAttribute.cs" />
     <Compile Include="Contexts\ApplicationDbContext.cs" />
     <Compile Include="Managers\ApplicationRoleManager.cs" />
     <Compile Include="Managers\ApplicationUserManager.cs" />

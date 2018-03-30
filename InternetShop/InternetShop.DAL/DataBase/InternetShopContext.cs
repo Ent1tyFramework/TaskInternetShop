@@ -14,8 +14,8 @@ namespace InternetShop.DAL.DataBase
         public InternetShopContext()
         :base("InternetShopContext")
         {
-            System.Data.Entity.Database.SetInitializer<InternetShopContext>(new InternetShopInitializer());
-            Database.Initialize(true);
+            //System.Data.Entity.Database.SetInitializer<InternetShopContext>(new InternetShopInitializer());
+            //Database.Initialize(true);
         }
 
         public DbSet<User> Users { get; set; }
